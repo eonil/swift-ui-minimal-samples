@@ -12,10 +12,12 @@ let package = Package(
         .executable(name: "CustomNSViewIO", targets: ["CustomNSViewIO"]),
         .executable(name: "CustomNSViewIOLoop", targets: ["CustomNSViewIOLoop"]),
         .executable(name: "CustomNSViewFirstResponder", targets: ["CustomNSViewFirstResponder"]),
+        .executable(name: "DataIO", targets: ["DataIO"]),
     ],
     targets: [
         .target(name: "CustomNSViewIO", dependencies: []),
         .target(name: "CustomNSViewIOLoop", dependencies: []),
         .target(name: "CustomNSViewFirstResponder", dependencies: []),
+        .target(name: "DataIO", dependencies: []),
     ]
 )
