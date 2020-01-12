@@ -4,14 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "CustomNSViewFirstResponder",
+    name: "SwiftUIMinimalSamples",
     platforms: [
         .macOS(.v10_15),
     ],
     products: [
+        .executable(name: "CustomNSViewIO", targets: ["CustomNSViewIO"]),
+        .executable(name: "CustomNSViewIOLoop", targets: ["CustomNSViewIOLoop"]),
         .executable(name: "CustomNSViewFirstResponder", targets: ["CustomNSViewFirstResponder"]),
     ],
     targets: [
+        .target(name: "CustomNSViewIO", dependencies: []),
+        .target(name: "CustomNSViewIOLoop", dependencies: []),
         .target(name: "CustomNSViewFirstResponder", dependencies: []),
     ]
 )
