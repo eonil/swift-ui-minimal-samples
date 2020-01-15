@@ -10,3 +10,4 @@ Minimal samples of how to use Swift UI for AppKit.
     into another input.
 - `CustomNSViewFirstResponder` shows how to control first responder status
     of embedded custom NSView.
+- `CustomNSViewFirstResponder2` shows better way to deal with first responders.
